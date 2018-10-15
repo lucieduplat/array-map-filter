@@ -38,7 +38,11 @@ Exemple d'entrée:
 
  */
 
-function searchWordFilter(items, search) {
+const searchWordFilter = (items, search) => {
+  let resultat = search.charAt(0).toUpperCase() + search.substr(1)
+  return items.filter(x => {         
+    return x.includes(resultat);
+  });
 }
 
 // Ne pas modifier l'export

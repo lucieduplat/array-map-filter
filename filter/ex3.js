@@ -23,7 +23,11 @@ Sortie attendue:
 
  */
 
-function keepStarks(names) {
+const keepStarks = (names) => {
+  const newArray = names.filter(name => {  
+      return name.endsWith("Stark")
+})
+  return newArray
 }
 
 // Ne pas modifier l'export

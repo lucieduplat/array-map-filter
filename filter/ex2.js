@@ -15,7 +15,13 @@ Exemple d'entrée:
 
  */
 
-function getMultiplesOf(numbers, n) {
+const getMultiplesOf = (numbers, n) => {
+  const newArray = numbers.filter(number => { 
+    if (number % n === 0) {   
+      return number
+    }
+    })
+  return newArray
 }
 
 // Ne pas modifier l'export

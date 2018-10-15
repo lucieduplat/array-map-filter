@@ -28,7 +28,11 @@ Sortie attendue:
   ]
  */
 
-function filterOnPrice(products, maxPrice) {
+const filterOnPrice = (products, maxPrice) => {
+  const newArray = products.filter(x => {
+    return (x.price <= maxPrice)
+  })
+  return newArray
 }
 
 // Ne pas modifier l'export
